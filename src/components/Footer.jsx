@@ -38,7 +38,7 @@ function Footer() {
             rel="noreferrer"
           >
             <FiMapPin />
-            Ghaziabad, Uttar Pradesh
+            Delhi, India
           </a>
 
           <a

@@ -66,8 +66,7 @@ function Gallery() {
           </h2>
 
           <p className="section-description">
-            From handcrafted beverages to welcoming interiors, every detail is
-            designed to create a comfortable and memorable café experience.
+            From handcrafted beverages to welcoming interiors, every detail is designed to create a comfortable and memorable café experience.
           </p>
         </div>
 
@@ -95,8 +94,7 @@ function Gallery() {
           <span>Real Business Ready</span>
 
           <p>
-            These visual placeholders can be replaced with original café
-            photographs before the final client presentation and deployment.
+            These visual placeholders can be replaced with original café photographs before the final client presentation and deployment.
           </p>
         </div>
       </div>

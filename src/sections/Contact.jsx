@@ -88,8 +88,7 @@ function Contact() {
           </h2>
 
           <p className="section-description">
-            Contact Brew & Bloom for menu enquiries, group seating,
-            availability, or general assistance.
+            Contact Brew & Bloom for menu enquiries, group seating, availability, or general assistance.
           </p>
         </div>
 
@@ -101,18 +100,17 @@ function Contact() {
               </span>
 
               <h3>
-                A convenient neighbourhood café in Ghaziabad
+                A convenient neighbourhood café in Delhi
               </h3>
 
               <p>
-                The location and contact details below are demonstration
-                information and should be replaced before final deployment.
+                The location and contact details below are demonstration information and should be replaced before final deployment.
               </p>
 
               <div className="contact__actions">
-                <Button href="tel:+919876543210" variant="light">
+                <Button href="#contact" variant="light">
                   <FiPhone />
-                  Call Now
+                  Contact Us
                 </Button>
 
                 <a
@@ -136,9 +134,9 @@ function Contact() {
                 <div>
                   <h3>Address</h3>
                   <p>
-                    Raj Nagar, Ghaziabad,
+                    Delhi
                     <br />
-                    Uttar Pradesh, India
+                    India
                   </p>
                 </div>
               </article>
@@ -150,9 +148,7 @@ function Contact() {
 
                 <div>
                   <h3>Phone</h3>
-                  <a href="tel:+919876543210">
-                    +91 98765 43210
-                  </a>
+                  <p>+91 XXXXX XXXXX</p>
                 </div>
               </article>
 
@@ -192,8 +188,7 @@ function Contact() {
                 <h3>Google Maps Location</h3>
 
                 <p>
-                  Replace this placeholder with the verified business map
-                  embed before final delivery.
+                  Replace this placeholder with the verified business map embed before final delivery.
                 </p>
 
                 <a
@@ -214,8 +209,7 @@ function Contact() {
               <h3>How can we help?</h3>
 
               <p>
-                Complete the form and the café team will respond to your
-                enquiry.
+                Complete the form and the café team will respond to your enquiry.
               </p>
             </div>
 
@@ -305,14 +299,12 @@ function Contact() {
                   role="status"
                   aria-live="polite"
                 >
-                  Your enquiry has been recorded successfully. This is a
-                  frontend demonstration form.
+                  Your enquiry has been recorded successfully. This is a frontend demonstration form.
                 </div>
               )}
 
               <p className="contact__form-note">
-                Connect this form to Web3Forms, Formspree, or a backend API
-                before production use.
+                Connect this form to Web3Forms, Formspree, or a backend API before production use.
               </p>
             </form>
           </div>

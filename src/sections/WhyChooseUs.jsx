@@ -64,14 +64,11 @@ function WhyChooseUs() {
             <span className="section-label">Why Choose Us</span>
 
             <h2 className="section-title">
-              A dependable local café experience designed around customer
-              comfort
+              A dependable local café experience designed around customer comfort
             </h2>
 
             <p className="section-description">
-              Brew & Bloom combines product quality, thoughtful service, and a
-              welcoming environment to make every visit convenient and
-              enjoyable.
+              Brew & Bloom combines product quality, thoughtful service, and a welcoming environment to make every visit convenient and enjoyable.
             </p>
 
             <ul className="why-us__standards">
@@ -101,8 +98,7 @@ function WhyChooseUs() {
               </div>
 
               <p>
-                Based on customer feedback, repeat visits, and local
-                recommendations.
+                Based on customer feedback, repeat visits, and local recommendations.
               </p>
             </div>
 

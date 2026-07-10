@@ -20,7 +20,7 @@ function FloatingActions() {
       aria-label="Quick contact options"
     >
       <a
-        href="tel:+919876543210"
+        href="#contact"
         className="floating-actions__button"
         aria-label="Call Brew and Bloom Café"
         title="Call the café"

@@ -73,8 +73,7 @@ function Testimonials() {
           </h2>
 
           <p className="section-description">
-            Positive customer experiences help build confidence and make it
-            easier for new visitors to choose Brew & Bloom.
+            Positive customer experiences help build confidence and make it easier for new visitors to choose Brew & Bloom.
           </p>
         </div>
 
@@ -103,9 +102,7 @@ function Testimonials() {
         </div>
 
         <p className="testimonials__disclaimer">
-          Demonstration content shown for project presentation. Replace with
-          verified customer reviews and business statistics before production
-          use.
+          Demonstration content shown for project presentation. Replace with verified customer reviews and business statistics before production use.
         </p>
       </div>
     </section>

@@ -16,9 +16,7 @@ function Hero() {
           </h1>
 
           <p>
-            Brew & Bloom brings together handcrafted coffee, freshly baked
-            delights, and a welcoming atmosphere where every visit feels
-            special.
+            Brew & Bloom brings together handcrafted coffee, freshly baked delights, and a welcoming atmosphere where every visit feels special.
           </p>
 
           <div className="hero__buttons">

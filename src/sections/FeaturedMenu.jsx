@@ -34,8 +34,7 @@ function FeaturedMenu() {
           </h2>
 
           <p className="section-description">
-            Explore a balanced selection of handcrafted coffee, refreshing
-            beverages, fresh bakery items, breakfast options, and desserts.
+            Explore a balanced selection of handcrafted coffee, refreshing beverages, fresh bakery items, breakfast options, and desserts.
           </p>
         </div>
 

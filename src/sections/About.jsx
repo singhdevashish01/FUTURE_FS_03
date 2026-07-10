@@ -68,24 +68,18 @@ function About() {
             </h2>
 
             <p>
-              Brew & Bloom Café was created to offer a comfortable local space
-              where customers can enjoy thoughtfully prepared coffee, fresh
-              bakery products, and meaningful moments.
+              Brew & Bloom Café was created to offer a comfortable local space where customers can enjoy thoughtfully prepared coffee, fresh bakery products, and meaningful moments.
             </p>
 
             <p>
-              Our focus is simple: maintain consistent quality, provide
-              attentive service, and create an environment that feels suitable
-              for a quick coffee break, a casual meeting, or time with friends
-              and family.
+              Our focus is simple: maintain consistent quality, provide attentive service, and create an environment that feels suitable for a quick coffee break, a casual meeting, or time with friends and family.
             </p>
 
             <div className="about__quote">
               <span>“</span>
 
               <p>
-                We believe a good café should offer more than a menu. It should
-                give people a reason to return.
+                We believe a good café should offer more than a menu. It should give people a reason to return.
               </p>
             </div>
           </div>
