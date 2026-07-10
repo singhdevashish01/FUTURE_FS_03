@@ -88,7 +88,8 @@ function Contact() {
           </h2>
 
           <p className="section-description">
-            Contact Brew & Bloom for menu enquiries, group seating, availability, or general assistance.
+            Contact Brew & Bloom for menu enquiries, group seating,
+            availability, or general assistance.
           </p>
         </div>
 
@@ -100,11 +101,13 @@ function Contact() {
               </span>
 
               <h3>
-                A convenient neighbourhood café in Delhi
+                A modern neighbourhood café experience in Delhi
               </h3>
 
               <p>
-                The location and contact details below are demonstration information and should be replaced before final deployment.
+                Brew & Bloom is designed to offer handcrafted coffee,
+                fresh bakery products, and a comfortable environment
+                for customers throughout the day.
               </p>
 
               <div className="contact__actions">
@@ -115,12 +118,10 @@ function Contact() {
 
                 <a
                   className="contact__whatsapp"
-                  href="https://wa.me/919876543210?text=Hello%20Brew%20%26%20Bloom%2C%20I%20would%20like%20to%20make%20an%20enquiry."
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#contact-form"
                 >
                   <FiMessageCircle />
-                  WhatsApp
+                  Message Us
                 </a>
               </div>
             </div>
@@ -132,7 +133,8 @@ function Contact() {
                 </div>
 
                 <div>
-                  <h3>Address</h3>
+                  <h3>Location</h3>
+
                   <p>
                     Delhi
                     <br />
@@ -147,7 +149,8 @@ function Contact() {
                 </div>
 
                 <div>
-                  <h3>Phone</h3>
+                  <h3>Contact</h3>
+
                   <p>+91 XXXXX XXXXX</p>
                 </div>
               </article>
@@ -159,6 +162,7 @@ function Contact() {
 
                 <div>
                   <h3>Email</h3>
+
                   <a href="mailto:hello@brewandbloom.in">
                     hello@brewandbloom.in
                   </a>
@@ -172,6 +176,7 @@ function Contact() {
 
                 <div>
                   <h3>Opening Hours</h3>
+
                   <p>
                     Monday to Sunday
                     <br />
@@ -185,10 +190,12 @@ function Contact() {
               <div className="contact__map-content">
                 <FiMapPin />
 
-                <h3>Google Maps Location</h3>
+                <h3>Serving Customers Across Delhi</h3>
 
                 <p>
-                  Replace this placeholder with the verified business map embed before final delivery.
+                  Brew & Bloom is positioned as a modern café concept
+                  designed to provide quality coffee, fresh bakery
+                  offerings, and a welcoming customer experience.
                 </p>
 
                 <a
@@ -196,20 +203,24 @@ function Contact() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Open in Google Maps
+                  Explore Location
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="contact__form-wrapper">
+          <div
+            className="contact__form-wrapper"
+            id="contact-form"
+          >
             <div className="contact__form-heading">
               <span>Send an Enquiry</span>
 
               <h3>How can we help?</h3>
 
               <p>
-                Complete the form and the café team will respond to your enquiry.
+                Complete the form and the café team will respond
+                to your enquiry.
               </p>
             </div>
 
@@ -299,12 +310,14 @@ function Contact() {
                   role="status"
                   aria-live="polite"
                 >
-                  Your enquiry has been recorded successfully. This is a frontend demonstration form.
+                  Your enquiry has been recorded successfully.
                 </div>
               )}
 
               <p className="contact__form-note">
-                Connect this form to Web3Forms, Formspree, or a backend API before production use.
+                This contact form is currently configured as a
+                frontend demonstration and can be connected to
+                Web3Forms or Formspree for production use.
               </p>
             </form>
           </div>
