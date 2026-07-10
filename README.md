@@ -2,11 +2,11 @@
 
 A professional, responsive website developed for a local café and bakery as part of the Future Interns Full Stack Web Development internship.
 
-The project is designed as a client-facing business website that improves the café's online presence, presents its offerings clearly, builds customer trust, and provides direct enquiry and contact options.
+The project is designed as a client facing business website that improves the café's online presence, presents its offerings clearly, builds customer trust, and provides direct enquiry and contact options.
 
 ## Live Demo
 
-The live deployment link will be added after deployment.
+https://future-fs-03-two-eta.vercel.app
 
 ## Project Objective
 
@@ -16,7 +16,7 @@ The website helps the business:
 
 - Present its menu and services clearly
 - Build credibility with potential customers
-- Provide location and opening-hour information
+- Provide location and opening hour information
 - Generate enquiries through direct contact options
 - Improve accessibility across desktop and mobile devices
 - Strengthen its overall digital presence
@@ -35,12 +35,12 @@ The website helps the business:
 - Enquiry form with validation
 - WhatsApp contact button
 - Direct call button
-- Back-to-top functionality
-- Mobile-responsive layout
+- Back to top functionality
+- Mobile responsive layout
 - SEO metadata
 - Accessibility improvements
 - Custom favicon
-- Production-ready Vite build
+- Production ready Vite build
 
 ## Technology Stack
 
