@@ -298,20 +298,4 @@
   .contact__details-grid {
     grid-template-columns: 1fr;
   }
-
-  .contact__error-message {
-    padding: 13px 15px;
-    color: #8a2f26;
-    background-color: #fff0ee;
-    border: 1px solid #efc4bf;
-    border-radius: 10px;
-    font-size: 0.82rem;
-    line-height: 1.6;
-  }
-
-  .contact__submit:disabled {
-    opacity: 0.65;
-    cursor: not-allowed;
-    transform: none;
-  }
 }

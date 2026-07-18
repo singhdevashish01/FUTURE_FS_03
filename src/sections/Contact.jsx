@@ -22,8 +22,6 @@ function Contact() {
   const [formData, setFormData] = useState(initialFormData);
   const [formErrors, setFormErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitError, setSubmitError] = useState("");
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -39,7 +37,6 @@ function Contact() {
     }));
 
     setSubmitted(false);
-    setSubmitError("");
   };
 
   const validateForm = () => {
@@ -64,7 +61,7 @@ function Contact() {
     return errors;
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     const errors = validateForm();
@@ -75,73 +72,9 @@ function Contact() {
       return;
     }
 
-    try {
-      setIsSubmitting(true);
-      setSubmitError("");
-      setSubmitted(false);
-
-      const accessKey =
-        import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
-
-      if (!accessKey) {
-        throw new Error(
-          "Web3Forms access key is not configured."
-        );
-      }
-
-      const response = await fetch(
-        "https://api.web3forms.com/submit",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-
-          body: JSON.stringify({
-            access_key: accessKey,
-
-            subject:
-              "New Brew & Bloom Website Enquiry",
-
-            from_name:
-              "Brew & Bloom Website",
-
-            name: formData.name,
-            email: formData.email,
-            phone:
-              formData.phone ||
-              "Not provided",
-
-            message: formData.message,
-          }),
-        }
-      );
-
-      const result = await response.json();
-
-      if (!response.ok || !result.success) {
-        throw new Error(
-          result.message ||
-            "Unable to submit the enquiry."
-        );
-      }
-
-      setSubmitted(true);
-      setFormData(initialFormData);
-      setFormErrors({});
-    } catch (error) {
-      console.error(
-        "Contact form submission error:",
-        error
-      );
-
-      setSubmitError(
-        "We could not send your enquiry right now. Please try again shortly."
-      );
-    } finally {
-      setIsSubmitting(false);
-    }
+    setSubmitted(true);
+    setFormData(initialFormData);
+    setFormErrors({});
   };
 
   return (
@@ -174,16 +107,13 @@ function Contact() {
               </span>
 
               <h3>
-                A modern neighbourhood café
-                experience in Delhi
+                A modern neighbourhood café experience in Delhi
               </h3>
 
               <p>
-                Brew & Bloom brings together
-                handcrafted coffee, fresh bakery
-                favourites, and a comfortable
-                environment designed for relaxed
-                everyday moments.
+                Brew & Bloom brings together handcrafted coffee,
+                fresh bakery favourites, and a comfortable
+                environment designed for relaxed everyday moments.
               </p>
 
               <div className="contact__actions">
@@ -213,7 +143,6 @@ function Contact() {
 
                 <div>
                   <h3>Location</h3>
-
                   <p>Delhi, India</p>
                 </div>
               </article>
@@ -225,7 +154,6 @@ function Contact() {
 
                 <div>
                   <h3>Contact</h3>
-
                   <p>+91 XXXXX XXXXX</p>
                 </div>
               </article>
@@ -270,9 +198,8 @@ function Contact() {
                 </h3>
 
                 <p>
-                  A modern café concept focused on
-                  quality coffee, fresh bakery
-                  offerings, and a welcoming customer
+                  A modern café concept focused on quality coffee,
+                  fresh bakery offerings, and a welcoming customer
                   experience.
                 </p>
 
@@ -297,8 +224,8 @@ function Contact() {
               <h3>How can we help?</h3>
 
               <p>
-                Complete the form below to send your
-                enquiry directly through the website.
+                Complete the form below to demonstrate the enquiry
+                workflow of the website.
               </p>
             </div>
 
@@ -320,9 +247,7 @@ function Contact() {
                   placeholder="Enter your full name"
                   value={formData.name}
                   onChange={handleChange}
-                  aria-invalid={
-                    Boolean(formErrors.name)
-                  }
+                  aria-invalid={Boolean(formErrors.name)}
                   aria-describedby={
                     formErrors.name
                       ? "name-error"
@@ -353,9 +278,7 @@ function Contact() {
                   placeholder="Enter your email address"
                   value={formData.email}
                   onChange={handleChange}
-                  aria-invalid={
-                    Boolean(formErrors.email)
-                  }
+                  aria-invalid={Boolean(formErrors.email)}
                   aria-describedby={
                     formErrors.email
                       ? "email-error"
@@ -401,9 +324,7 @@ function Contact() {
                   placeholder="Tell us how we can assist you"
                   value={formData.message}
                   onChange={handleChange}
-                  aria-invalid={
-                    Boolean(formErrors.message)
-                  }
+                  aria-invalid={Boolean(formErrors.message)}
                   aria-describedby={
                     formErrors.message
                       ? "message-error"
@@ -424,13 +345,9 @@ function Contact() {
               <Button
                 type="submit"
                 className="contact__submit"
-                disabled={isSubmitting}
               >
                 <FiSend />
-
-                {isSubmitting
-                  ? "Sending..."
-                  : "Send Enquiry"}
+                Send Enquiry
               </Button>
 
               {submitted && (
@@ -439,24 +356,15 @@ function Contact() {
                   role="status"
                   aria-live="polite"
                 >
-                  Your enquiry has been sent
-                  successfully. Thank you for getting
-                  in touch.
-                </div>
-              )}
-
-              {submitError && (
-                <div
-                  className="contact__error-message"
-                  role="alert"
-                >
-                  {submitError}
+                  Thank you. Your enquiry has been recorded for this
+                  demonstration.
                 </div>
               )}
 
               <p className="contact__form-note">
-                Your information will only be used to
-                respond to your enquiry.
+                This is a demonstration enquiry form created for the
+                project presentation. No personal information is stored
+                or transmitted.
               </p>
             </form>
           </div>
