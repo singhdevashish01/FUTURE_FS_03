@@ -16,7 +16,9 @@ function Hero() {
           </h1>
 
           <p>
-            Brew & Bloom brings together handcrafted coffee, freshly baked delights, and a welcoming atmosphere where every visit feels special.
+            Brew & Bloom brings together handcrafted coffee, freshly baked
+            delights, and a welcoming atmosphere designed for relaxed visits,
+            casual meetings, and everyday moments.
           </p>
 
           <div className="hero__buttons">
@@ -31,18 +33,18 @@ function Hero() {
 
           <div className="hero__stats">
             <div>
-              <h3>500+</h3>
-              <p>Happy Customers</p>
+              <h3>Fresh</h3>
+              <p>Prepared Daily</p>
             </div>
 
             <div>
-              <h3>30+</h3>
-              <p>Menu Items</p>
+              <h3>Variety</h3>
+              <p>Across Multiple Categories</p>
             </div>
 
             <div>
-              <h3>4.8★</h3>
-              <p>Customer Rating</p>
+              <h3>7 Days</h3>
+              <p>Open Throughout the Week</p>
             </div>
           </div>
         </div>

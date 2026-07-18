@@ -1,7 +1,7 @@
 import {
-  FiAward,
+  FiCoffee,
   FiMessageCircle,
-  FiRefreshCw,
+  FiSmile,
   FiUsers,
 } from "react-icons/fi";
 
@@ -11,53 +11,53 @@ import "./Testimonials.css";
 const testimonials = [
   {
     id: 1,
-    name: "Aarav Mehta",
-    initials: "AM",
-    details: "Regular Customer",
+    name: "Sample Customer",
+    initials: "SC",
+    details: "Demonstration Review",
     rating: 5,
     review:
-      "The atmosphere is calm, the coffee is consistently good, and the staff are attentive without being intrusive. It has become my preferred place for casual meetings.",
+      "A calm café environment with a clear menu, comfortable seating, and a simple overall customer experience.",
   },
   {
     id: 2,
-    name: "Riya Sharma",
-    initials: "RS",
-    details: "Local Resident",
+    name: "Sample Visitor",
+    initials: "SV",
+    details: "Demonstration Review",
     rating: 5,
     review:
-      "The bakery items always feel fresh, and the menu has enough variety without being confusing. The service is quick and the space is very comfortable.",
+      "The concept focuses well on convenience, freshness, and an easy-to-understand presentation of food and beverages.",
   },
   {
     id: 3,
-    name: "Kunal Verma",
-    initials: "KV",
-    details: "Weekend Visitor",
+    name: "Sample Guest",
+    initials: "SG",
+    details: "Demonstration Review",
     rating: 5,
     review:
-      "A reliable neighbourhood café with good coffee, clean interiors, and clear pricing. The staff also helped us arrange seating for a small group.",
+      "The website makes it easy to understand the café offerings, opening hours, location, and enquiry options before visiting.",
   },
 ];
 
 const trustMetrics = [
   {
-    icon: <FiUsers />,
-    value: "500+",
-    label: "Customers Served",
+    icon: <FiCoffee />,
+    value: "Fresh",
+    label: "Prepared Daily",
   },
   {
-    icon: <FiRefreshCw />,
-    value: "68%",
-    label: "Repeat Visitors",
+    icon: <FiUsers />,
+    value: "Comfort",
+    label: "Welcoming Space",
   },
   {
     icon: <FiMessageCircle />,
-    value: "4.8/5",
-    label: "Average Rating",
+    value: "Direct",
+    label: "Enquiry Support",
   },
   {
-    icon: <FiAward />,
-    value: "5+ Years",
-    label: "Local Experience",
+    icon: <FiSmile />,
+    value: "Simple",
+    label: "Customer Experience",
   },
 ];
 
@@ -66,14 +66,15 @@ function Testimonials() {
     <section className="testimonials" id="testimonials">
       <div className="container">
         <div className="section-heading">
-          <span className="section-label">Customer Reviews</span>
+          <span className="section-label">Customer Experience</span>
 
           <h2 className="section-title">
-            Trusted by customers who value quality and comfort
+            Designed to create a clear and welcoming customer journey
           </h2>
 
           <p className="section-description">
-            Positive customer experiences help build confidence and make it easier for new visitors to choose Brew & Bloom.
+            The website presents sample customer perspectives to demonstrate how
+            social proof and trust-building content can support a local café.
           </p>
         </div>
 
@@ -102,7 +103,9 @@ function Testimonials() {
         </div>
 
         <p className="testimonials__disclaimer">
-          Demonstration content shown for project presentation. Replace with verified customer reviews and business statistics before production use.
+          Sample testimonials are included for project presentation purposes
+          only and should be replaced with verified customer reviews before
+          production use.
         </p>
       </div>
     </section>

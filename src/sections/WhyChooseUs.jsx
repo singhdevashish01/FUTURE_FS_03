@@ -20,7 +20,7 @@ const benefits = [
     icon: <FiClock />,
     title: "Freshly Prepared",
     description:
-      "Bakery items and café favourites are prepared in small batches to keep the menu fresh throughout the day.",
+      "Bakery items and café favourites are prepared in small batches to maintain freshness throughout the day.",
   },
   {
     icon: <FiSmile />,
@@ -38,21 +38,21 @@ const benefits = [
     icon: <FiHeart />,
     title: "Personal Service",
     description:
-      "Customers receive attentive support for menu choices, seating requirements, and special requests.",
+      "Customers receive attentive support for menu choices, seating requirements, and general enquiries.",
   },
   {
     icon: <FiStar />,
-    title: "Customer Trusted",
+    title: "Customer Focused",
     description:
-      "Positive feedback, repeat visits, and word-of-mouth recommendations reflect the value delivered consistently.",
+      "The overall experience is designed around clarity, convenience, comfort, and consistent service.",
   },
 ];
 
 const standards = [
-  "Fresh ingredients sourced carefully",
+  "Fresh ingredients selected carefully",
   "Clear menu and transparent pricing",
   "Comfortable seating and clean interiors",
-  "Direct phone and WhatsApp support",
+  "Easy enquiry and contact options",
 ];
 
 function WhyChooseUs() {
@@ -64,11 +64,12 @@ function WhyChooseUs() {
             <span className="section-label">Why Choose Us</span>
 
             <h2 className="section-title">
-              A dependable local café experience designed around customer comfort
+              A dependable café experience designed around comfort and quality
             </h2>
 
             <p className="section-description">
-              Brew & Bloom combines product quality, thoughtful service, and a welcoming environment to make every visit convenient and enjoyable.
+              Brew & Bloom combines thoughtful service, clear offerings, and a
+              welcoming environment to make every visit simple and enjoyable.
             </p>
 
             <ul className="why-us__standards">
@@ -84,12 +85,12 @@ function WhyChooseUs() {
           <div className="why-us__summary">
             <div className="why-us__summary-main">
               <span className="why-us__summary-label">
-                Customer Experience
+                Our Service Approach
               </span>
 
-              <strong>4.8</strong>
+              <strong>Simple</strong>
 
-              <div className="why-us__stars" aria-label="4.8 out of 5 stars">
+              <div className="why-us__stars" aria-hidden="true">
                 <FiStar />
                 <FiStar />
                 <FiStar />
@@ -98,19 +99,20 @@ function WhyChooseUs() {
               </div>
 
               <p>
-                Based on customer feedback, repeat visits, and local recommendations.
+                A straightforward café experience built around freshness,
+                comfort, clarity, and attentive customer service.
               </p>
             </div>
 
             <div className="why-us__summary-grid">
               <div>
-                <strong>500+</strong>
-                <span>Customers Served</span>
+                <strong>Fresh</strong>
+                <span>Prepared Daily</span>
               </div>
 
               <div>
-                <strong>30+</strong>
-                <span>Menu Options</span>
+                <strong>Clear</strong>
+                <span>Menu & Pricing</span>
               </div>
 
               <div>
@@ -119,8 +121,8 @@ function WhyChooseUs() {
               </div>
 
               <div>
-                <strong>5+</strong>
-                <span>Years of Service</span>
+                <strong>Direct</strong>
+                <span>Enquiry Support</span>
               </div>
             </div>
           </div>
