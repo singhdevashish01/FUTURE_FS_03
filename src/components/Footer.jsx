@@ -1,4 +1,9 @@
-import { FiInstagram, FiMapPin, FiPhone } from "react-icons/fi";
+import {
+  FiInstagram,
+  FiMail,
+  FiMapPin,
+} from "react-icons/fi";
+
 import "./Footer.css";
 
 function Footer() {
@@ -6,56 +11,66 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="container footer__content">
-        <div className="footer__brand">
-          <h2>Brew & Bloom</h2>
+      <div className="container">
+        <div className="footer__top">
+          <div className="footer__brand">
+            <a href="#home" className="footer__logo">
+              Brew & Bloom
+            </a>
+
+            <p>
+              Handcrafted coffee, fresh bakes, and a welcoming café
+              experience designed for everyday moments.
+            </p>
+          </div>
+
+          <div className="footer__column">
+            <h3>Explore</h3>
+
+            <a href="#about">Our Story</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div className="footer__column">
+            <h3>Visit</h3>
+
+            <span>
+              <FiMapPin />
+              Delhi, India
+            </span>
+
+            <span>
+              <FiMail />
+              hello@brewandbloom.in
+            </span>
+          </div>
+
+          <div className="footer__column">
+            <h3>Follow</h3>
+
+            <a
+              href="#home"
+              aria-label="Instagram placeholder"
+            >
+              <FiInstagram />
+              Instagram
+            </a>
+
+            <p className="footer__placeholder-note">
+              Social links are placeholders for project demonstration.
+            </p>
+          </div>
+        </div>
+
+        <div className="footer__bottom">
           <p>
-            Fresh coffee, handcrafted bakes, and a welcoming neighbourhood
-            experience.
+            © {currentYear} Brew & Bloom. All rights reserved.
           </p>
-        </div>
 
-        <div className="footer__links">
-          <h3>Explore</h3>
-
-          <a href="#about">About</a>
-          <a href="#menu">Menu</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <div className="footer__contact">
-          <h3>Contact</h3>
-
-          <a href="tel:+919876543210">
-            <FiPhone />
-            +91 98765 43210
-          </a>
-
-          <a
-            href="https://maps.google.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FiMapPin />
-            Delhi, India
-          </a>
-
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FiInstagram />
-            Instagram
-          </a>
-        </div>
-      </div>
-
-      <div className="footer__bottom">
-        <div className="container">
           <p>
-            © {currentYear} Brew & Bloom Café. All rights reserved.
+            Local Business Website Project
           </p>
         </div>
       </div>

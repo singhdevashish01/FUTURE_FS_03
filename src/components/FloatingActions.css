@@ -1,53 +1,45 @@
 .floating-actions {
   position: fixed;
   right: 22px;
-  bottom: 24px;
+  bottom: 22px;
   z-index: 900;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .floating-actions__button {
   display: inline-flex;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background-color: var(--color-primary);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: rgba(74, 43, 25, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(74, 45, 24, 0.24);
-  font-size: 1.15rem;
+  box-shadow: 0 8px 24px rgba(45, 25, 14, 0.18);
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
   transition:
-    background-color 0.2s ease,
     transform 0.2s ease,
-    box-shadow 0.2s ease;
+    background-color 0.2s ease;
 }
 
 .floating-actions__button:hover {
-  background-color: var(--color-primary-dark);
-  box-shadow: 0 12px 28px rgba(74, 45, 24, 0.3);
+  background-color: var(--color-primary);
   transform: translateY(-3px);
-}
-
-.floating-actions__button--whatsapp {
-  background-color: #247a46;
-}
-
-.floating-actions__button--whatsapp:hover {
-  background-color: #1b6137;
 }
 
 @media (max-width: 600px) {
   .floating-actions {
     right: 14px;
-    bottom: 16px;
+    bottom: 14px;
   }
 
   .floating-actions__button {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
   }
 }

@@ -1,3 +1,8 @@
+import coffee from "../assets/images/coffee.jpg";
+import bakery from "../assets/images/bakery.jpg";
+import breakfast from "../assets/images/breakfast.jpg";
+import dessert from "../assets/images/dessert.jpg";
+
 export const menuCategories = [
   "All",
   "Coffee",
@@ -16,17 +21,19 @@ export const menuItems = [
       "Rich espresso finished with steamed milk and a smooth layer of foam.",
     price: 180,
     badge: "Popular",
-    icon: "☕",
+    image: coffee,
+    vegetarian: true,
   },
   {
     id: 2,
     name: "Hazelnut Latte",
     category: "Coffee",
     description:
-      "A balanced espresso latte with a warm and subtly sweet hazelnut flavour.",
+      "Balanced espresso with steamed milk and a subtle hazelnut finish.",
     price: 220,
     badge: "Signature",
-    icon: "☕",
+    image: coffee,
+    vegetarian: true,
   },
   {
     id: 3,
@@ -36,76 +43,84 @@ export const menuItems = [
       "Chilled coffee blended with milk for a smooth and refreshing finish.",
     price: 210,
     badge: "Bestseller",
-    icon: "🥤",
+    image: coffee,
+    vegetarian: true,
   },
   {
     id: 4,
     name: "Fresh Lime Cooler",
     category: "Beverages",
     description:
-      "A refreshing lime-based cooler prepared with mint and sparkling water.",
+      "A refreshing lime-based cooler finished with mint and sparkling water.",
     price: 160,
     badge: "",
-    icon: "🍋",
+    image: breakfast,
+    vegetarian: true,
   },
   {
     id: 5,
     name: "Avocado Toast",
     category: "Breakfast",
     description:
-      "Toasted artisan bread topped with seasoned avocado and fresh herbs.",
+      "Artisan toast topped with seasoned avocado and fresh herbs.",
     price: 260,
     badge: "Fresh",
-    icon: "🥑",
+    image: breakfast,
+    vegetarian: true,
   },
   {
     id: 6,
     name: "Café Breakfast Plate",
     category: "Breakfast",
     description:
-      "A complete breakfast with eggs, toast, grilled vegetables, and hash browns.",
+      "A complete breakfast plate with toast, grilled vegetables, and café sides.",
     price: 340,
     badge: "Complete Meal",
-    icon: "🍳",
+    image: breakfast,
+    vegetarian: false,
   },
   {
     id: 7,
     name: "Butter Croissant",
     category: "Bakery",
     description:
-      "A flaky, layered croissant baked fresh with a rich buttery finish.",
+      "A flaky layered croissant with a rich buttery finish.",
     price: 140,
     badge: "Fresh Daily",
-    icon: "🥐",
+    image: bakery,
+    vegetarian: true,
   },
   {
     id: 8,
     name: "Chocolate Muffin",
     category: "Bakery",
     description:
-      "A soft chocolate muffin filled with rich cocoa and chocolate chips.",
+      "Soft chocolate muffin prepared with cocoa and chocolate pieces.",
     price: 150,
     badge: "",
-    icon: "🧁",
+    image: bakery,
+    vegetarian: true,
   },
   {
     id: 9,
     name: "Blueberry Cheesecake",
     category: "Desserts",
     description:
-      "Creamy baked cheesecake topped with a bright blueberry compote.",
+      "Creamy cheesecake finished with a bright blueberry topping.",
     price: 260,
     badge: "Chef's Pick",
-    icon: "🍰",
+    image: dessert,
+    vegetarian: true,
   },
   {
     id: 10,
     name: "Chocolate Brownie",
     category: "Desserts",
     description:
-      "A dense chocolate brownie served warm with a soft and fudgy centre.",
+      "A rich chocolate brownie with a soft and fudgy centre.",
     price: 190,
     badge: "",
-    icon: "🍫",
+    image: dessert,
+    vegetarian: true,
   },
 ];
