@@ -161,4 +161,37 @@ textarea {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+
+  .section-heading,
+  .hero__content,
+  .hero__visual,
+  .about__content,
+  .about__visual,
+  .featured-menu__grid,
+  .why-us__intro,
+  .gallery__grid,
+  .testimonials__grid,
+  .contact__layout {
+    animation: gentleReveal 0.7s ease both;
+  }
+
+  .hero__visual {
+    animation-delay: 0.12s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+
+    .section-heading,
+    .hero__content,
+    .hero__visual,
+    .about__content,
+    .about__visual,
+    .featured-menu__grid,
+    .why-us__intro,
+    .gallery__grid,
+    .testimonials__grid,
+    .contact__layout {
+      animation: none;
+    }
+  }
 }

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 
 import MenuCard from "../components/MenuCard";
 import Button from "../components/Button";
+import Reveal from "../components/Reveal";
 
 import {
   menuCategories,
@@ -11,7 +12,8 @@ import {
 import "./FeaturedMenu.css";
 
 function FeaturedMenu() {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] =
+    useState("All");
 
   const filteredItems = useMemo(() => {
     if (activeCategory === "All") {
@@ -26,59 +28,80 @@ function FeaturedMenu() {
   return (
     <section className="featured-menu" id="menu">
       <div className="container">
-        <div className="section-heading">
-          <span className="section-label">Our Menu</span>
-
-          <h2 className="section-title">
-            Carefully prepared favourites for every part of your day
-          </h2>
-
-          <p className="section-description">
-            Explore a balanced selection of handcrafted coffee, refreshing beverages, fresh bakery items, breakfast options, and desserts.
-          </p>
-        </div>
-
-        <div
-          className="featured-menu__filters"
-          aria-label="Menu categories"
-        >
-          {menuCategories.map((category) => (
-            <button
-              type="button"
-              key={category}
-              className={
-                activeCategory === category
-                  ? "featured-menu__filter featured-menu__filter--active"
-                  : "featured-menu__filter"
-              }
-              onClick={() => setActiveCategory(category)}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-
-        <div className="featured-menu__grid">
-          {filteredItems.map((item) => (
-            <MenuCard key={item.id} item={item} />
-          ))}
-        </div>
-
-        <div className="featured-menu__cta">
-          <div>
-            <span className="featured-menu__cta-label">
-              Planning a visit?
+        <Reveal>
+          <div className="section-heading">
+            <span className="section-label">
+              Our Menu
             </span>
 
-            <h3>
-              Contact us for availability, group seating, or special requests.
-            </h3>
-          </div>
+            <h2 className="section-title">
+              Carefully prepared favourites for every part of your day
+            </h2>
 
-          <Button href="#contact">
-            Contact the Café
-          </Button>
-        </div>
+            <p className="section-description">
+              Explore a balanced selection of handcrafted
+              coffee, refreshing beverages, fresh bakery
+              items, breakfast options, and desserts.
+            </p>
+          </div>
+        </Reveal>
+
+        <Reveal delay={80}>
+          <div
+            className="featured-menu__filters"
+            aria-label="Menu categories"
+          >
+            {menuCategories.map((category) => (
+              <button
+                type="button"
+                key={category}
+                className={
+                  activeCategory === category
+                    ? "featured-menu__filter featured-menu__filter--active"
+                    : "featured-menu__filter"
+                }
+                onClick={() =>
+                  setActiveCategory(category)
+                }
+                aria-pressed={
+                  activeCategory === category
+                }
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </Reveal>
+
+        <Reveal delay={130}>
+          <div className="featured-menu__grid">
+            {filteredItems.map((item) => (
+              <MenuCard
+                key={item.id}
+                item={item}
+              />
+            ))}
+          </div>
+        </Reveal>
+
+        <Reveal delay={180}>
+          <div className="featured-menu__cta">
+            <div>
+              <span className="featured-menu__cta-label">
+                Planning a visit?
+              </span>
+
+              <h3>
+                Explore the café, discover the menu,
+                and plan your next Brew & Bloom moment.
+              </h3>
+            </div>
+
+            <Button href="#contact">
+              Contact the Café
+            </Button>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
